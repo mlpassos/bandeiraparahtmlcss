@@ -1,0 +1,100 @@
+.wrapper {
+	width:1000px;
+	margin:0 auto;
+	text-align:center;
+}
+.bandeira {
+	background-color:#D81E05;
+	width:900px;
+	height:600px;
+	margin:20px auto;
+	border-radius:15px;
+	overflow:hidden;
+	-webkit-animation: anima 1s linear infinite;
+}
+@-webkit-keyframes anima {	
+ 0% {
+    -webkit-transform: scale(1.03);
+   	-moz-transform: scale(1.03);
+   	-o-transform: scale(1.03);
+   	-ms-transform: scale(1.03);
+   	transform: scale(1.03);
+ }
+ 50% {
+    -webkit-transform: scale(1.01);
+   	-moz-transform: scale(1.01);
+   	-o-transform: scale(1.01);
+   	-ms-transform: scale(1.01);
+   	transform: scale(1.01);
+ }
+ 100% {
+    -webkit-transform: scale(1);
+   	-moz-transform: scale(1);
+   	-o-transform: scale(1);
+   	-ms-transform: scale(1);
+   	transform: scale(1);
+ }
+}
+.faixa {
+	background-color:#FFFFFF;
+	width:150%;
+	height:200px;
+	transform: rotate(35deg) translateY(280px);
+}
+
+.estrela {
+   position:absolute;
+   top:50%;
+   left:50%;
+   margin-left:-100px;
+   margin-top:-15px;
+   /*margin: 50px 0;*/
+   /*position: fixed;*/
+   display: block;
+   color: #0074D8;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid #0074d8;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+   transform: translate(-50%, -50%);
+   /*transform: translateY(60px) translateX(500px);*/
+}
+.estrela:before {
+   border-bottom: 80px solid #0074d8;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+
+}
+.estrela:after {
+   position: absolute;
+   display: block;
+   color: #0074D8;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid #0074d8;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
